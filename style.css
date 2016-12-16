@@ -471,7 +471,10 @@ a {
     margin-top: 12px;
 }
 .site-about, .site-franchise {
-	margin-left: 16em;
+	/*margin-left: 16em;
+    margin-top: 6em;*/
+    width: 300px;
+    margin: 0 auto;
     margin-top: 6em;
 }
 .site-about__header {
@@ -484,7 +487,7 @@ a {
 
 .site-about__copy {
 	font-family: 'buenard';
-    width: 389px;
+    width: 100%;
 }
 
 
