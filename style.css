@@ -80,6 +80,7 @@ html {
 	font-family: 'Roboto Condensed', sans-serif;
 	padding: 0;
 	margin-top: 6px;
+	margin: 12px auto 18px;
 }
 
 @media(min-width: 700px) {
@@ -106,7 +107,7 @@ html {
 }
 
 .site-nav__item {
-	margin-right: 1em;
+	margin-right: 2em;
 }
 
 a {
@@ -429,9 +430,10 @@ a {
 
 
 .site-menu__header-eng {
-	    color: #8c0404;
+	color: #8c0404;
     font-weight: 700;
     letter-spacing: 2px;
+    text-align: center;
     text-align: center;
 }
 
@@ -456,6 +458,7 @@ a {
 	font-family: 'roboto condensed';
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .site-menu__item-price {
@@ -469,6 +472,7 @@ a {
     text-transform: lowercase;
     font-size: 14px;
     margin-top: 12px;
+    margin-right: 5px;
 }
 .site-about, .site-franchise {
 	/*margin-left: 16em;
@@ -489,6 +493,40 @@ a {
 	font-family: 'buenard';
     width: 100%;
 }
+
+.site-menu__deal {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border: 1px solid black;
+    margin-top: 1em;
+}
+
+.site-menu__deal-title{
+	font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.site-menu__deal-details {
+	text-align: center;
+    font-family: 'buenard';
+    font-size: 14px;
+    margin-top: 1em;
+    text-transform: none;
+}
+
+.site-menu__deal-highlight {
+	text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
 
 
 
