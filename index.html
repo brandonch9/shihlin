@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shihlin Taiwanese Street Snacks</title>
+	<link href="https://fonts.googleapis.com/css?family=Buenard:400,700|Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="site-header">
+		<a href="index.html"><img class="site-header__banner" src="banner.png" alt=""></a>
+	</div>
+	<ul class="site-nav site-nav--mobile">
+		<li class="site-nav__item" id="nav__menu"><a href="#">Menu</a></li>
+		<li class="site-nav__item"><a href="about.html">About</a></li>
+		<li class="site-nav__item"><a href="location.html">Location</a></li>
+		<li class="site-nav__item"><a href="Franchise.html">Franchise</a></li>
+	</ul>
+	<div class="site-nav__mobile-menu">
+		<ul class="mobile-menu__list">
+			<a class="mobile-menu__section" href="crispychicken.html"><li>Crispy Chicken</li></a>
+			<a class="mobile-menu__section" href="meals.html"><li>Meals</li></a>
+			<a class="mobile-menu__section" href="snacks.html"><li>Snacks</li></a>
+			<a class="mobile-menu__section" href="beverages.html"><li>Beverages</li></a>
+		</ul>
+	</div>
+	<div class="site-home__splash">
+		<!-- <img class="site-home__splash-img" src="splash.png" alt=""> -->
+		<div class="splash__text">
+			<span class="splash__date">December 17</span>
+			<span class="splash__headline">Holiday Grand Opening <br>Milpitas Square</span>
+			<span class="splash__subtitle">Authentic Street Food <br>from Taiwanese Night Markets</span>
+		</div>
+	</div>
+
+	<div class="site-home__foods">
+		<a href="crispychicken.html">
+			<div class="site-home__food-pic" id="crispychicken">
+				<div class="site-home__food-name">
+					<div class="food-name__doublebar-left"></div>
+					<div class="food-name__text">Crispy Chicken</div>
+					<div class="food-name__doublebar-right"></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+		</a>
+		<a href="meals.html">
+		<div class="site-home__food-pic" id="meals">
+			<div class="site-home__food-name">
+				<div class="food-name__doublebar-left"></div>
+				<div class="food-name__text">Meals</div>
+				<div class="food-name__doublebar-right"></div>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		</a>
+		<a href="snacks.html">
+		<div class="site-home__food-pic" id="snacks">
+			<div class="site-home__food-name">
+				<div class="food-name__doublebar-left"></div>
+				<div class="food-name__text">Snacks</div>
+				<div class="food-name__doublebar-right"></div>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		</a>
+		<a href="beverages.html">
+		<div class="site-home__food-pic" id="beverages">
+			<div class="site-home__food-name">
+				<div class="food-name__doublebar-left"></div>
+				<div class="food-name__text">Beverages</div>
+				<div class="food-name__doublebar-right"></div>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		</a>
+	</div>
+
+	<div class="site-home__section site-home__hours">
+		<div class="site-home__section-title">Hours</div>
+		<i class="site-home__section-icon ion ion-ios-clock-outline"></i>
+		<div class="site-home__section-container">
+			<div class="site-home__section-text">
+				<div class="site-home__section-days">Sun - Thu</div>
+				<div class="site-home__section-hours">11 am - 9 pm</div>
+			</div>
+			<div class="site-home__section-text">
+				<div class="site-home__section-days">Fri - Sat</div>
+				<div class="site-home__section-hours">11 am - 11 pm</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-home__section site-home__location">
+		<div class="site-home__section-title">Location</div>
+		<i class="site-home__section-icon ion ion-ios-location-outline"></i>
+		<div class="site-home__section-container">
+			<div class="site-home__section-text">
+				<span class="site-home__section-location">Milpitas Square</span>
+				<span class="site-home__section-address">522 Barber Lane <br> Milpitas, CA 95035</span>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<span>© SHIHLIN SNACKS  2016</span>
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  	<script>
+  		$('#nav__menu').click(function() {
+  			$('.site-nav__mobile-menu').toggle();
+  		})
+
+  	</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shihlin Taiwanese Street Snacks</title>
+	<link href="https://fonts.googleapis.com/css?family=Buenard:400,700|Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="site-header">
+		<a href="index.html"><img class="site-header__banner" src="banner.png" alt=""></a>
+	</div>
+	<ul class="site-nav site-nav--mobile">
+		<li class="site-nav__item" id="nav__menu"><a href="#">Menu</a></li>
+		<li class="site-nav__item"><a href="about.html">About</a></li>
+		<li class="site-nav__item"><a href="location.html">Location</a></li>
+		<li class="site-nav__item"><a href="Franchise.html">Franchise</a></li>
+	</ul>
+	<div class="site-nav__mobile-menu">
+		<ul class="mobile-menu__list">
+			<a class="mobile-menu__section" href="crispychicken.html"><li>Crispy Chicken</li></a>
+			<a class="mobile-menu__section" href="meals.html"><li>Meals</li></a>
+			<a class="mobile-menu__section" href="snacks.html"><li>Snacks</li></a>
+			<a class="mobile-menu__section" href="beverages.html"><li>Beverages</li></a>
+		</ul>
+	</div>
+
+	<div class="site-menu">
+		<div class="site-menu__header">
+			<span class="site-menu__header-eng">Meals</span>
+			<span class="site-menu__header-cn">夜市超大雞排</span>
+		</div>
+		
+		<div class="site-menu__item">
+			<div class="site-home__food-pic" id="treasurericebox">
+			</div>
+			<div class="site-menu__item-info">
+				<div class="site-menu__item-title-eng">Treasure! Ricebox</div>
+				<div class="site-menu__item-title-cn">招牌便當</div>
+				<div class="site-menu__item-price">$7.50</div>
+			</div>
+		</div>
+		
+		<div class="site-menu__item">
+			<div class="site-home__food-pic" id="oystermeesua">
+			</div>
+			<div class="site-menu__item-info">
+				<div class="site-menu__item-title-eng">Handmade Oyster Mee Sua</div>
+				<div class="site-menu__item-title-cn">蚵仔麵線</div>
+				<div class="site-menu__item-price">$6.99</div>
+			</div>
+		</div>
+
+		<div class="site-menu__item">
+			<div class="site-home__food-pic" id="grandmameatrice">
+			</div>
+			<div class="site-menu__item-info">
+				<div class="site-menu__item-title-eng">Grandma Braised Meat Rice</div>
+				<div class="site-menu__item-title-cn">阿嬤滷鷄肉飯</div>
+				<div class="site-menu__item-price">$4.99</div>
+			</div>
+		</div>
+
+		<div class="site-menu__item">
+			<div class="site-home__food-pic" id="grandpameatrice">
+			</div>
+			<div class="site-menu__item-info">
+				<div class="site-menu__item-title-eng">Grandpa Braised Meat Rice</div>
+				<div class="site-menu__item-title-cn">阿公滷鷄肉飯</div>
+				<div class="site-menu__item-price">$4.50</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="site-footer">
+		<span>© SHIHLIN SNACKS  2016</span>
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  	<script>
+  		$('#nav__menu').click(function() {
+  			$('.site-nav__mobile-menu').toggle();
+  		})
+
+  	</script>
+</body>
+</html>
