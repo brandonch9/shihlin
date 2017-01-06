@@ -60,6 +60,10 @@ html {
 		/*max-width: 890px;*/
 		max-height: 600px;
 	}
+
+	.site-nav__item a {
+		font-size: 16px;
+	}
 }
 
 .site-nav {
@@ -100,6 +104,13 @@ html {
     font-size: 12px;
     font-weight: 700;
     color: #8c0404;
+}
+
+@media(min-width: 415px) {
+
+	.site-nav__item a {
+		font-size: 16px;
+	}
 }
 
 .site-nav__item:last-child {
