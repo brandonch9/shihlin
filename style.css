@@ -41,7 +41,7 @@ html {
 	height: 500px;
 	margin: 0 auto;
 	position: relative;
-	background: url('splash.png') center center no-repeat;
+	background: url('splash.jpg') center center no-repeat;
 	background-position-x: 92%;
 	background-size: auto 500px;
 }
@@ -148,9 +148,10 @@ a {
 }
 
 .splash__date {
-	font-size: 12px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
+	font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 8px;
 }
 
 .splash__subtitle {
@@ -164,15 +165,17 @@ a {
 	margin: 0 auto;
 	position: relative;
 	height: 200px;
-	width: 100%;
+	width: 100;
+	max-width: 400px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	margin-bottom: 3em;
 }
 
-.site-home__food-pic:hover {
+/*.site-home__food-pic:hover {
 	background-size: 120% !important;
-}
+}*/
 
 #crispychicken {
 	background: url('XXL Crispy Chicken Thigh.jpg') center center no-repeat;
@@ -355,17 +358,31 @@ a {
 	display: flex;
 }
 
+.site-home__location {
+	margin-top: -50px;
+}
+
 .site-home__section-location {
 	display: block;
 	font-weight: 700;
+	font-size: 24px;
+}
+
+.site-home__section-address {
 	font-size: 20px;
 }
 
 .site-footer {
 	height: 100px;
+	margin-top: 4em;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-bottom: 2em;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -407,6 +424,7 @@ a {
 	text-align: center;
 	color: #000;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .site-menu__header {
@@ -437,6 +455,10 @@ a {
     text-align: center;
 }
 
+.site-menu__header-cn {
+	font-size: 24px;
+}
+
 .site-menu__item-info {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -459,18 +481,23 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    font-weight: 600;
+}
+
+.site-menu__item-title-cn {
+	font-size: 24px;
 }
 
 .site-menu__item-price {
 	font-family: 'buenard';
     font-weight: 700;
-    margin-top: .5em;
+    font-size: 22px;
 }
 
 .site-menu__asterisk {
 	font-family: 'buenard';
     text-transform: lowercase;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 12px;
     margin-right: 5px;
 }
@@ -495,10 +522,19 @@ a {
 }
 
 .site-menu__deal {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 1em;
     border: 1px solid black;
     margin-top: 1em;
@@ -514,7 +550,7 @@ a {
 .site-menu__deal-details {
 	text-align: center;
     font-family: 'buenard';
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 1em;
     text-transform: none;
 }
@@ -524,9 +560,157 @@ a {
     font-weight: 700;
 }
 
+.splash__headline--small {
+	font-size: 18px;
+    text-transform: uppercase;
+}
 
+.splash__headline--big {
+	font-size: 36px;
+    text-transform: uppercase;
+}
 
+.site-home__section-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 200px;
+}
 
+.site-home__section-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 
+.site-home__foods-icon {
+	height: 50px;
+}
 
+.site-home__customer-photos-icon {
+	font-size: 48px;
+}
 
+.site-home__customer-photo {
+	background: url("customer_photo_1.jpg") center center no-repeat;
+	background-size: cover;
+	height: 500px;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.site-footer__social-media-icon {
+	font-size: 20px;
+	color: #8c0404;
+	cursor: pointer;
+}
+
+.site-footer__social-media-wrapper {
+	margin-bottom: 2em;
+}
+
+.site-home__days-wrapper {
+	text-align: left;
+    margin-right: 1em;
+}
+
+.site-home__hours-wrapper {
+	text-align: left;
+}
+
+.site-home__day, .site-home__hours {
+	margin-bottom: .5em;
+    font-size: 18px;
+}
+
+.site-home__day {
+	font-weight: 600;
+}
+
+.site-home__store-hours {
+	height: 450px;
+}
+
+.splash__promo-text {
+    display: block;
+    text-align: center;
+    color: #feb218;
+    font-size: 14px;
+    font-family: 'roboto condensed';
+    margin: 0 auto;
+    right: 90px;
+}
+
+.splash__promo-headline {
+	font-size: 18px;
+}
+
+.splash__promo-terms {
+	color: white;
+}
+
+.splash__promo {
+	position: absolute;
+    top: 374px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+}
+
+.story-of-shihlin {
+	display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.storefront-img {
+	display: block;
+	width: 100%;
+}
+
+.map-img {
+	display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media(min-width: 848px) {
+	.site-menu__item-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.site-menu__item, .site-home__food-pic {
+		width: 400px;
+	}
+
+	.site-home__food-pic {
+		margin-bottom: 3em;
+	}
+
+	.site-menu__item:first-child, .site-menu__item:nth-child(3), .site-menu__item:nth-child(5), .site-menu__item-wrapper a:first-child .site-home__food-pic{
+		margin-right: 3em;
+	}
+}
