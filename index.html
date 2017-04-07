@@ -2,169 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>Shihlin Snacks</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shihlin Taiwanese Street Snacks</title>
-	<link href="https://fonts.googleapis.com/css?family=Buenard:400,700|Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="site-header">
-		<a href="index.html"><img class="site-header__banner" src="banner.png" alt=""></a>
+		<div class="banner-bg"></div>
+		<a href="index.html" class="site-banner"><img class="site-banner-sm" src="banner_sm.png" alt="" class="banner_sm"></a>
+		<!-- <img src="banner_md.jpg" alt="" class="banner_md">
+		<img src="banner_lg.jpg" alt="" class="banner_lg"> -->
+		<div class="nav-container">
+			<div class="site-nav-mobile-open">
+				<i class="ion ion-android-menu"></i>
+			</div>
+			<div class="site-nav-mobile-close">
+				<i class="ion ion-android-close"></i>
+			</div>
+			<div class="social-links social-links--flex">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
+		<div class="site-nav-mobile">
+			<ul>
+				<a href="about.html"><li>About</li></a>
+				<a href="menu.html"><li>Menu</li></a>
+				<a href="photos.html"><li>Photos</li></a>
+				<a href="franchise.html"><li>Franchise</li></a>
+			</ul>
+			<div class="social-links">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
 	</div>
-	<ul class="site-nav site-nav--mobile">
-		<li class="site-nav__item" id="nav__menu"><a href="#">Menu</a></li>
-		<li class="site-nav__item"><a href="about.html">About</a></li>
-		<li class="site-nav__item"><a href="location.html">Location</a></li>
-		<li class="site-nav__item"><a href="franchise.html">Franchise</a></li>
-	</ul>
-	<div class="site-nav__mobile-menu">
-		<ul class="mobile-menu__list">
-			<a class="mobile-menu__section" href="crispychicken.html"><li>Crispy Chicken</li></a>
-			<a class="mobile-menu__section" href="meals.html"><li>Meals</li></a>
-			<a class="mobile-menu__section" href="snacks.html"><li>Snacks</li></a>
-			<a class="mobile-menu__section" href="beverages.html"><li>Beverages</li></a>
-			<a class="mobile-menu__section" href="togo_menu.pdf"><li>To Go Menu</li></a>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1><span class="u-italic u-light">welcome<br>to</span> SHIHLIN</h1>
+			<!-- <h5>Milpitas, California</h5> -->
+			<div class="store-info">
+				<!-- <p>歡迎光臨!</p> -->
+				<p>Milpitas Square<br>522 Barber Lane<br>Milpitas, CA 95035 | <span class="link--white">Map</span></p>
+				<p>Monday – Friday<br>Open 11:30 am – 9:00 pm</p>
+				<p>Saturday – Sunday<br>Open 11:30 am – 11:30 pm </p>
+			</div>		
+		</div>
+	</div>
+	<section class="cards">
+		<div class="card">
+			<div class="card__img"></div>
+			<div class="card__text">
+				<h2>Authentic</h2>
+				<p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions. View our <span class="link">menu</span></p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card__img"></div>
+			<div class="card__text">
+				<h2>Authentic</h2>
+				<p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions. View our <span class="link">menu</span></p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<ul class="footer-links">
+			<li class="footer-link">privacy policy</li>
+			<li class="footer-link">terms of use</li>
+			<li class="footer-link">franchise</li>
 		</ul>
-	</div>
-	<div class="site-home__splash">
-		<!-- <img class="site-home__splash-img" src="splash.png" alt=""> -->
-		<div class="splash__text">
-			<span class="splash__headline--small">Milpitas Square</span>
-			<span class="splash__headline--big">Grand Opening</span>
-			<span class="splash__date">January 9, 2017</span>
-		</div>
-		<div class="splash__promo">
-			<span class="splash__promo-text splash__promo-headline">Free Seafood Tempura<br></span><span class="splash__promo-text splash__promo-terms" style="margin-bottom: 1em">for the first 100 customers</span>
-			<span class="splash__promo-text splash__promo-headline">Free Butterfly Pea Drink<br></span><span class="splash__promo-text splash__promo-terms">for purchases over $10 (through 1/15/17)</span>
-		</div>
-	</div>
-
-	<div class="site-home__foods">
-		<div class="site-home__section-header">
-			<div class="site-home__section-wrapper">
-				<span class="site-home__section-title">Our food</span>
-				<img class="site-home__foods-icon" src="chopsticks.png" alt="">
-			</div>
-		</div>
-
-		<div class="site-menu__item-wrapper">
-			<a href="crispychicken.html">
-				<div class="site-home__food-pic" id="crispychicken" style="margin-bottom: 3em;">
-					<!-- <div class="site-home__food-name">
-						<div class="food-name__doublebar-left"></div>
-						<div class="food-name__text">Crispy Chicken</div>
-						<div class="food-name__doublebar-right"></div>
-					</div>
-					<div class="overlay"></div> -->
-				</div>
-			</a>
-			<a href="meals.html">
-			<div class="site-home__food-pic" id="meals" style="margin-bottom: 3em;">
-				<!-- <div class="site-home__food-name">
-					<div class="food-name__doublebar-left"></div>
-					<div class="food-name__text">Meals</div>
-					<div class="food-name__doublebar-right"></div>
-				</div>
-				<div class="overlay"></div> -->
-			</div>
-			</a>
-		</div>
-
-		<div class="site-menu__item-wrapper">
-			<a href="snacks.html">
-			<div class="site-home__food-pic" id="snacks" style="margin-bottom: 3em;">
-				<!-- <div class="site-home__food-name">
-					<div class="food-name__doublebar-left"></div>
-					<div class="food-name__text">Snacks</div>
-					<div class="food-name__doublebar-right"></div>
-				</div>
-				<div class="overlay"></div> -->
-			</div>
-			</a>
-			<a href="beverages.html">
-			<div class="site-home__food-pic" id="beverages" style="margin-bottom: 3em;">
-				<!-- <div class="site-home__food-name">
-					<div class="food-name__doublebar-left"></div>
-					<div class="food-name__text">Beverages</div>
-					<div class="food-name__doublebar-right"></div>
-				</div>
-				<div class="overlay"></div> -->
-			</div>
-			</a>
-		</div>
-	</div>
-
-	<div class="site-home__customer-photos">
-		<div class="site-home__section-header">
-			<div class="site-home__section-wrapper">
-				<span class="site-home__section-title">Customer Photos</span>
-				<i class="ion ion-happy-outline site-home__customer-photos-icon"></i>
-			</div>
-		</div>
-		<div class="site-home__customer-photo"></div>
-	</div>
-
-	<div class="site-home__section site-home__store-hours">
-		<div class="site-home__section-title">Hours</div>
-		<i class="site-home__section-icon ion ion-ios-clock-outline"></i>
-		<div class="site-home__section-container">
-			<div class="site-home__days-wrapper">
-				<div class="site-home__day">Monday</div>
-				<div class="site-home__day">Tuedsay</div>
-				<div class="site-home__day">Wednesday</div>
-				<div class="site-home__day">Thursday</div>
-				<div class="site-home__day">Friday</div>
-				<div class="site-home__day">Saturday</div>
-				<div class="site-home__day">Sunday</div>
-			</div>
-			<div class="site-home__hours-wrapper">
-				<div class="site-home__hours">11am - 9 pm</div>
-				<div class="site-home__hours">11am - 9 pm</div>
-				<div class="site-home__hours">11am - 9 pm</div>
-				<div class="site-home__hours">11am - 9 pm</div>
-				<div class="site-home__hours">11am - 9 pm</div>
-				<div class="site-home__hours">11am - 10 pm</div>
-				<div class="site-home__hours">11am - 10 pm</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="site-home__section site-home__location">
-		<div class="site-home__section-title">Location</div>
-		<i class="site-home__section-icon ion ion-ios-location-outline"></i>
-		<div class="site-home__section-container">
-			<div class="site-home__section-text">
-				<span class="site-home__section-location">Milpitas Square</span>
-				<span class="site-home__section-address">522 Barber Lane <br> Milpitas, CA 95035 <br>(408) 922-7271</span>
-			</div>
-		</div>
-	</div>
-
-	<footer class="site-footer">
-		<div class="site-footer__social-media-wrapper">
-			<a href="https://www.yelp.com/biz/shihlin-taiwan-street-snacks-milpitas"><i class="site-footer__social-media-icon fa fa-yelp"></i></a>
-			<a href="https://www.instagram.com/shihlinsnacks/?hl=en"><i class="site-footer__social-media-icon fa fa-instagram"></i></a>
-			<a href="https://www.facebook.com/shihlinsnacksmilpitasca/"><i class="site-footer__social-media-icon fa fa-facebook"></i></a>
-		</div>
-		<span>© SHIHLIN SNACKS  2016</span>
+		<small>© Shihlin Snacks 2017</small>
 	</footer>
-
-	<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
-  	<script>
-  		$('#nav__menu').click(function() {
-  			$('.site-nav__mobile-menu').toggle();
-  		})
-
-  		$('.mobile-menu__section').click(function() {
-  			$('.active').css({"color":"black"}).removeClass('active')
-  			$(this).css({"color":"#8c0404"}).addClass('active')
-  		})
-
-  	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$('.site-nav-mobile-open').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+		$('.site-nav-mobile-close').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+	</script>
 </body>
 </html>

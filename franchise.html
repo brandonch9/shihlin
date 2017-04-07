@@ -2,58 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>Shihlin Snacks</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shihlin Taiwanese Street Snacks</title>
-	<link href="https://fonts.googleapis.com/css?family=Buenard:400,700|Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="site-header">
-		<a href="index.html"><img class="site-header__banner" src="banner.png" alt=""></a>
+		<div class="banner-bg"></div>
+		<a href="index.html" class="site-banner"><img class="site-banner-sm" src="banner_sm.png" alt="" class="banner_sm"></a>
+		<!-- <img src="banner_md.jpg" alt="" class="banner_md">
+		<img src="banner_lg.jpg" alt="" class="banner_lg"> -->
+		<div class="nav-container">
+			<div class="site-nav-mobile-open">
+				<i class="ion ion-android-menu"></i>
+			</div>
+			<div class="site-nav-mobile-close">
+				<i class="ion ion-android-close"></i>
+			</div>
+			<div class="social-links">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
+		<div class="site-nav-mobile">
+			<ul>
+				<a href="about.html"><li>About</li></a>
+				<a href="menu.html"><li>Menu</li></a>
+				<a href="photos.html"><li>Photos</li></a>
+				<a href="franchise.html"><li>Franchise</li></a>
+			</ul>
+			<div class="social-links">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
 	</div>
-	<ul class="site-nav site-nav--mobile">
-		<li class="site-nav__item" id="nav__menu"><a href="#">Menu</a></li>
-		<li class="site-nav__item"><a href="about.html">About</a></li>
-		<li class="site-nav__item"><a href="location.html">Location</a></li>
-		<li class="site-nav__item"><a href="franchise.html">Franchise</a></li>
-	</ul>
-	<div class="site-nav__mobile-menu">
-		<ul class="mobile-menu__list">
-			<a class="mobile-menu__section" href="crispychicken.html"><li>Crispy Chicken</li></a>
-			<a class="mobile-menu__section" href="meals.html"><li>Meals</li></a>
-			<a class="mobile-menu__section" href="snacks.html"><li>Snacks</li></a>
-			<a class="mobile-menu__section" href="beverages.html"><li>Beverages</li></a>
-			<a class="mobile-menu__section" href="togo_menu.pdf"><li>To Go Menu</li></a>
+	<div class="hero-image">
+		<div class="card">
+			<div class="card__text">
+				<h2>Franchise</h2>
+				<p>If you want to join the early growth of the Shihlin opportunity, we are seeking individuals who are interested franchising Shihlin Taiwan Street Snacks units in California.</p>
+				<p>To inquire, please contact us through our email <span class="link">shihlinfranchise@gmail.com</span></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<ul class="footer-links">
+			<li class="footer-link">privacy policy</li>
+			<li class="footer-link">terms of use</li>
+			<li class="footer-link">franchise</li>
 		</ul>
-	</div>
-	<div class="site-franchise">
-		<h1 class="site-about__header">Franchise</h1>
-		<div class="site-about__copy">
-			<p class="site-about__paragraph">If you want to join the early growth of the Shihlin opportunity, we are seeking individuals who are interested franchising Shihlin Taiwan Street Snacks units in California.</p>
-			<p class="site-about__paragraph">To inquire, please contact us through our email: <span style="color:#8c0404">shihlinfranchise@gmail.com</span></p>
-		</div>
-	</div>
-
-	<footer class="site-footer">
-		<div class="site-footer__social-media-wrapper">
-			<a href="https://www.yelp.com/biz/shihlin-taiwan-street-snacks-milpitas"><i class="site-footer__social-media-icon fa fa-yelp"></i></a>
-			<a href="https://www.instagram.com/shihlinsnacks/?hl=en"><i class="site-footer__social-media-icon fa fa-instagram"></i></a>
-			<a href="https://www.facebook.com/shihlinsnacksmilpitasca/"><i class="site-footer__social-media-icon fa fa-facebook"></i></a>
-		</div>
-		<span>© SHIHLIN SNACKS  2016</span>
+		<small>© Shihlin Snacks 2017</small>
 	</footer>
-
-	<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
-  	<script>
-  		$('#nav__menu').click(function() {
-  			$('.site-nav__mobile-menu').toggle();
-  		})
-
-  	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$('.site-nav-mobile-open').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+		$('.site-nav-mobile-close').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+	</script>
 </body>
 </html>
