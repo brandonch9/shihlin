@@ -18,8 +18,7 @@ body {
 	background-color: #f4f4f4;
 	font-family: "Lato", sans-serif;
 	min-width: 320px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility !important;
 }
 
 a {
@@ -153,8 +152,8 @@ font-family: "Lato", sans-serif;
 
 .card__text p {
 	font-size: 15px;
-	line-height: 21.5px;
-	font-weight: 300;
+    	line-height: 22px;
+    	font-weight: 300;
 	margin-bottom: 2em;
 }
 
