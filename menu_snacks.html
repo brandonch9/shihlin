@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shihlin Snacks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="site-header">
+		<div class="banner-bg"></div>
+		<a href="index.html" class="site-banner"><img class="site-banner-sm" src="banner_sm.png" alt="" class="banner_sm"></a>
+		<!-- <img src="banner_md.jpg" alt="" class="banner_md">
+		<img src="banner_lg.jpg" alt="" class="banner_lg"> -->
+		<div class="nav-container">
+			<div class="site-nav-mobile-open">
+				<i class="ion ion-android-menu"></i>
+			</div>
+			<div class="site-nav-mobile-close">
+				<i class="ion ion-android-close"></i>
+			</div>
+			<div class="social-links">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
+		<div class="site-nav-mobile">
+			<ul>
+				<a href="about.html"><li>About</li></a>
+				<a href="menu.html"><li>Menu</li></a>
+				<a href="photos.html"><li>Photos</li></a>
+				<a href="franchise.html"><li>Franchise</li></a>
+			</ul>
+			<div class="social-links">
+				<i class="ion ion-social-facebook"></i>
+				<i class="ion ion-social-twitter"></i>
+				<i class="ion ion-social-instagram"></i>
+			</div>
+		</div>
+	</div>
+	<section class="content">
+		<div class="card--fluid">
+			<div class="card__text">
+				<h2>Menu</h2>
+				<ul class="menu-sections">
+					<a href="menu_chicken.html"><li>Crispy Chicken</li></a>
+					<a href="menu_meals.html"><li>Meals</li></a>
+					<a href="menu_snacks.html"><li class="menu-section--active">Snacks</li></a>
+					<a href="menu_drinks.html"><li>Drinks</li></a>
+				</ul>
+				<ul class="menu-items">
+					<!-- <h3 class="menu-section-title">Meals</h3> -->
+					<li>
+						<div class="menu-img" id="plum_potato_fries"></div>
+						<h3>Sweet Plum Potato Fries</h3>
+						<p>A healthy and delicious alternative to regular fries. Made with our light and crunchy batter.</p>
+						<h5>$5.99</h5>
+					</li>
+					<li>
+						<div class="menu-img" id="plum_potato_fries"></div>
+						<h3>Sweet Plum Potato Fries</h3>
+						<p>A healthy and delicious alternative to regular fries. Made with our light and crunchy batter.</p>
+						<h5>$5.99</h5>
+					</li>
+				</ul>
+				
+				<!-- <p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions. View our <span class="link">menu</span></p> -->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<ul class="footer-links">
+			<li class="footer-link">privacy policy</li>
+			<li class="footer-link">terms of use</li>
+			<li class="footer-link">franchise</li>
+		</ul>
+		<small>© Shihlin Snacks 2017</small>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$('.site-nav-mobile-open').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+		$('.site-nav-mobile-close').click(function() {
+			$('.site-nav-mobile').toggle();
+			$('.site-nav-mobile-open').toggle();
+			$('.site-nav-mobile-close').toggle();
+		})
+	</script>
+</body>
+</html>

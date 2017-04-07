@@ -1,0 +1,409 @@
+/*html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 148px;  bottom = footer height 
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 148px;
+    width: 100%;
+}*/
+
+body {
+	margin: 0;
+	background-color: #f4f4f4;
+	font-family: "Lato", sans-serif;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.site-banner-sm {
+	max-width: 320px;
+}
+
+.social-links i {
+	color: rgba(0,0,0,0.5);
+	font-size: 18px;
+	padding: 0.5em;
+	transition: all 0.25s;
+	cursor: pointer;
+}
+
+.social-links i:hover {
+	color: rgba(0,0,0,0.3);
+}
+
+.social-links {
+    padding-right: 1em;
+    /* float: right; */
+    margin-left: auto;
+}
+
+.social-links--flex {
+    display: flex;
+    padding-right: 1em;
+    /* float: right; */
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav-mobile-open, .site-nav-mobile-close {
+	height: 48px;
+	width: 48px;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1em;
+	position: relative;
+	top: 15px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.site-nav-mobile-open:hover {
+	background-color: #292929;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.site-nav-mobile-open i,  .site-nav-mobile-close i{
+	font-size: 24px;
+	line-height: 48px;
+}
+
+.hero-image {
+	clear: both;
+	background-image: url("skyline_red_2.png");
+	background-size: cover;
+	height: 520px;
+	color: white;
+	padding: 56px 0;
+}
+
+h1 {
+	font-family: "Lato", sans-serif;
+	font-size: 42px;
+	line-height: 48px;
+	letter-spacing: 0px;
+	font-weight: 900;
+	margin: 0;
+}
+
+h5 {
+	font-family: "Lato", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 0;
+	margin-top: .5em;
+}
+
+p {
+font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    max-width: 320px;
+}
+
+.store-info {
+	margin-top: 4em;
+}
+
+
+.card {
+	width: 280px;
+	height: 402px;
+	background-color: white;
+	margin: 20px auto;
+	color: black;
+}
+
+.card--fluid {
+	max-width: 720px;
+	background-color: white;
+	margin: 20px auto;
+	color: black;
+}
+
+.cards:after {
+	position: relative;
+	content: '';
+	width: 100px;
+	height: 100px;
+	background-color: #c9c8c2;
+}
+
+.card__text p {
+	font-size: 15px;
+	line-height: 21.5px;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+
+.card__text {
+	padding: 20px 33px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 900;
+	margin-bottom: .8em;
+}
+
+.card__img {
+	background-image: url("winter_tea.png");
+	background-size: cover;
+	height: 140px;
+	background-position-y: -79px;
+}
+
+.link {
+	font-weight: 700;
+	border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    transition: all 0.25s;
+    cursor: pointer !important;
+}
+
+.link--white {
+	font-weight: 700;
+	border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: all 0.25s;
+    cursor: pointer !important;
+}
+
+.link:hover {
+	border-color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.5);
+}
+
+footer {
+	/*margin: 40px;*/
+	background-color: #1e1e1e;
+	padding: 3em;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0em;
+    margin-bottom: 3em;
+}
+
+.footer-link {
+    color: rgba(255,255,255,0.6);
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 1em;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+	color: rgba(255,255,255,1);
+
+}
+
+small {
+	color: rgba(255,255,255,0.3);
+    font-size: 15px;
+}
+
+
+.site-nav-mobile {
+    background-color: #1a1a1a;
+    display: none;
+}
+
+.site-nav-mobile ul {
+	list-style: none;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.site-nav-mobile li {
+	color: white;
+    padding: 16px 24px;
+    border-bottom: 1px solid #3c3c3c;
+    transition: all 0.25s;
+}
+
+.site-nav-mobile a:first-child li{
+	border-top: 1px solid #3c3c3c;
+}
+
+.site-nav-mobile .social-links i {
+	color: white;
+}
+
+.site-nav-mobile li:hover {
+	/*background-color: #6c6c6c;*/
+	background-color: rgba(255,255,255,0.1);
+}
+
+
+.site-nav-mobile .social-links {
+	padding: 0px 16px 1em;
+}
+
+
+.site-nav-mobile-close {
+	display: none;
+}
+
+.menu-sections {
+	padding: 0;
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.menu-sections li {
+	text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.menu-sections a:first-child li {
+	border-top: 1px solid #ddd;
+}
+
+.menu-sections li:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+.menu-img {
+	max-width: 100%;
+	height: 100px;
+}
+
+.menu-img--lg {
+	max-width: 100%;
+	height: 120px;
+}
+
+
+#grandpa_braised_rice {
+	background-image: url("grandpa_braised_rice.png");
+	background-size: cover;
+	background-position-y: -14px;
+}
+
+#chicken {
+	background-image: url("chicken.png");
+	background-size: cover;
+	background-position: -8px -32px;
+}
+
+#plum_potato_fries {
+	background-image: url("plum_potato_fries.png");
+	background-size: cover;
+	background-position: 10px -29px;
+}
+
+#ai_yu {
+	background-image: url("ai_yu.png");
+	background-size: cover;
+	background-position: -3px -67px;
+}
+
+
+.content {
+	background-color: #444;
+	padding: 20px;
+		background-image: url("skyline_red_2.png");
+	background-size: cover;
+}
+
+.menu-items {
+	    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-items li {
+	margin-bottom: 2em;
+	max-width: 254px;
+}
+
+.menu-items p {
+	margin: 0;
+}
+
+.menu-items h3 {
+	margin-bottom: .5em;
+}
+
+.menu-items .menu-section-title{
+	margin-bottom: 1em;
+}
+
+.hero-text {
+	padding: 0px 20px 0 20px;
+}
+
+
+@media (max-width: 320px) {
+	.hero-image {
+		padding: 56px 0 56px 0;
+	}	
+	.content {
+		padding: 20px 0;
+	}
+	.card, .card--fluid {
+		margin:20px 0;
+		width: 100%;
+	}
+	.card__img {
+		background-position: -4px -93px;
+	}
+}
+
+.u-italic {
+	font-style: italic;
+}
+
+.u-light {
+	font-weight: 300 !important;
+}
+
+.u-bold {
+	font-weight: 700 !important;
+}
+.menu-sections .menu-section--active {
+	font-weight: 900 !important;
+	font-size: 13px;
+}
+.banner-bg {
+    position: relative;
+    height: 53px;
+    width: 100%;
+    background: #850503;
+    top: 10px;
+    z-index: -9999;
+}
+.site-banner-sm {
+	    margin-top: -60px;
+}
