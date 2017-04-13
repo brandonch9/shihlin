@@ -5,14 +5,17 @@
 	<title>Shihlin Snacks</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="site-header">
-		<div class="banner-bg"></div>
-		<a href="index.html" class="site-banner"><img class="site-banner-sm" src="banner_sm.png" alt="" class="banner_sm"></a>
+		<a href="index.html" class="site-banner">
+			<div class="banner-bg"></div>
+			<img class="site-banner-sm" src="banner_sm.png" alt="" class="banner_sm">
+		</a>
 		<!-- <img src="banner_md.jpg" alt="" class="banner_md">
 		<img src="banner_lg.jpg" alt="" class="banner_lg"> -->
 		<div class="nav-container">
@@ -23,55 +26,65 @@
 				<i class="ion ion-android-close"></i>
 			</div>
 			<div class="social-links">
-				<i class="ion ion-social-facebook"></i>
-				<i class="ion ion-social-twitter"></i>
-				<i class="ion ion-social-instagram"></i>
+				<a href="https://www.yelp.com/biz/shihlin-taiwan-street-snacks-milpitas"><i class="fa fa-yelp"></i></a>
+				<a href="https://www.facebook.com/shihlinsnacksmilpitasca/"><i class="ion ion-social-facebook"></i></a>
+				<a href="https://www.instagram.com/shihlinsnacks/?hl=en"><i class="ion ion-social-instagram"></i></a>
 			</div>
 		</div>
 		<div class="site-nav-mobile">
 			<ul>
 				<a href="about.html"><li>About</li></a>
-				<a href="menu.html"><li>Menu</li></a>
-				<a href="photos.html"><li>Photos</li></a>
+				<a href="menu_chicken.html"><li>Menu</li></a>
+				<!-- <a href="photos.html"><li>Photos</li></a> -->
 				<a href="franchise.html"><li>Franchise</li></a>
 			</ul>
 			<div class="social-links">
-				<i class="ion ion-social-facebook"></i>
-				<i class="ion ion-social-twitter"></i>
-				<i class="ion ion-social-instagram"></i>
+				<a href="https://www.yelp.com/biz/shihlin-taiwan-street-snacks-milpitas"><i class="fa fa-yelp"></i></a>
+				<a href="https://www.facebook.com/shihlinsnacksmilpitasca/"><i class="ion ion-social-facebook"></i></a>
+				<a href="https://www.instagram.com/shihlinsnacks/?hl=en"><i class="ion ion-social-instagram"></i></a>
 			</div>
 		</div>
 	</div>
 	<section class="content">
 		<div class="card--fluid">
 			<div class="card__text">
-				<h2>Menu</h2>
-				<ul class="menu-sections">
-					<a href="menu_chicken.html"><li>Crispy Chicken</li></a>
-					<a href="menu_meals.html"><li class="menu-section--active">Meals</li></a>
-					<a href="menu_snacks.html"><li>Snacks</li></a>
-					<a href="menu_drinks.html"><li>Drinks</li></a>
-				</ul>
+				<div class="menu-nav">
+					<h3>Menu</h3>
+					<ul class="menu-sections">
+						<a href="menu_chicken.html"><li>Crispy Chicken</li></a>
+						<a href="menu_meals.html"><li class="menu-section--active">Meals</li></a>
+						<a href="menu_snacks.html"><li>Snacks</li></a>
+						<a href="menu_drinks.html"><li>Drinks</li></a>
+					</ul>
+				</div>
 				<ul class="menu-items">
 					<!-- <h3 class="menu-section-title">Meals</h3> -->
-					<li>
-						<div class="menu-img" id="grandpa_braised_rice"></div>
-						<h3>Grandpa's Braised Meat Rice</h3>
-						<p>Taiwanese style braised pork over rice. Served with a tea egg, pickled cabbage and cilantro.</p>
-						<h5>$5.99</h5>
-					</li>
-					<li>
-						<div class="menu-img" id="grandpa_braised_rice"></div>
-						<h3>Grandpa's Braised Meat Rice</h3>
-						<p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions.</p>
-						<h5>$5.99</h5>
-					</li>
-					<li>
-						<div class="menu-img" id="grandpa_braised_rice"></div>
-						<h3>Grandpa's Braised Meat Rice</h3>
-						<p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions.</p>
-						<h5>$5.99</h5>
-					</li>
+					<div class="row">
+						<li>
+							<div class="menu-img" id="treasure_rice"></div>
+							<p class="menu-text"><span class="u-bold">Treasure! Ricebox<br></span>Fried chicken fillet, bean curd, and pickled cabbage over rice<br>$7.99</p>
+						</li>
+						<li>
+							<div class="menu-img" id="mee_sua"></div>
+							<p class="menu-text"><span class="u-bold">Handmade Oyster Mee Sua<br></span>Wheat vermicelli noodles with oysters in a thickened soup. <br>$7.29 /<span class="u-italic" style="font-weight: 400;"> $4.49 without oysters</span></p>					
+						</li>
+					</div>
+					<div class="row">
+						<li>
+							<div class="menu-img" id="grandma_braised_rice"></div>
+							<p class="menu-text"><span class="u-bold">Grandma's Braised Meat Rice<br></span>Braised pork over rice with a tea egg and bean curd. <br>$5.99</p>		
+						</li>
+						<li>
+							<div class="menu-img" id="grandpa_braised_rice"></div>
+							<p class="menu-text"><span class="u-bold">Grandpa's Braised Meat Rice<br></span>Braised pork over rice with a tea egg and pickled cabbage. <br>$5.99</p>		
+						</li>						
+					</div>
+					<div class="row">
+						<li>
+							<!-- <div class="menu-img" id="grandma_braised_rice"></div> -->
+							<p class="menu-text"><span class="u-bold">Jiayi Chicken Rice<br></span>$5.99</p>		
+						</li>					
+					</div>
 				</ul>
 				
 				<!-- <p>From saving for home repairs to taking a dream trip, use the extra income to fund your passions. View our <span class="link">menu</span></p> -->
@@ -79,11 +92,11 @@
 		</div>
 	</section>
 	<footer>
-		<ul class="footer-links">
+<!-- 		<ul class="footer-links">
 			<li class="footer-link">privacy policy</li>
 			<li class="footer-link">terms of use</li>
 			<li class="footer-link">franchise</li>
-		</ul>
+		</ul> -->
 		<small>© Shihlin Snacks 2017</small>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

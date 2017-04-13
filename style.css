@@ -16,7 +16,7 @@ footer {
 body {
 	margin: 0;
 	background-color: #f4f4f4;
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	min-width: 320px;
 	text-rendering: optimizeLegibility !important;
 }
@@ -51,12 +51,18 @@ a {
 }
 
 .social-links--flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     padding-right: 1em;
     /* float: right; */
     margin-left: auto;
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .site-nav-mobile-open, .site-nav-mobile-close {
@@ -64,23 +70,34 @@ a {
 	width: 48px;
 	background-color: rgb(30, 30, 30);
 	color: white;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-left: 1em;
 	position: relative;
 	top: 15px;
 	cursor: pointer;
 	text-align: center;
+	z-index: 9999;
 }
 
-.site-nav-mobile-open:hover {
+.site-nav-mobile-open:hover,.site-nav-mobile-close:hover {
 	background-color: #292929;
 }
 
 .nav-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .site-nav-mobile-open i,  .site-nav-mobile-close i{
@@ -90,11 +107,26 @@ a {
 
 .hero-image {
 	clear: both;
-	background-image: url("skyline_red_2.png");
+	background-image: url("skyline_red_3.png");
+	/*background-image: url("ssam_hero.png");*/
 	background-size: cover;
-	height: 520px;
+	height: 715.5px;
+	min-height: 570px;
 	color: white;
-	padding: 56px 0;
+	/*padding: 56px 0;*/
+	background-position: center center;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.hero-image:before {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0.25);*/
+    content: '';
 }
 
 h1 {
@@ -102,7 +134,7 @@ h1 {
 	font-size: 42px;
 	line-height: 48px;
 	letter-spacing: 0px;
-	font-weight: 900;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -119,24 +151,29 @@ font-family: "open sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    max-width: 320px;
+/*    max-width: 320px;*/
 }
 
 .store-info {
-	margin-top: 4em;
+	margin-top: 1em;
 }
 
 
 .card {
-	width: 280px;
-	height: 402px;
+	/*width: 280px;*/
+	max-width: 720px;
+/*	height: 402px;*/
 	background-color: white;
 	margin: 20px auto;
 	color: black;
 }
 
+.cards {
+	padding: 0 20px;
+}
+
 .card--fluid {
-	max-width: 720px;
+	max-width: 390px;
 	background-color: white;
 	margin: 20px auto;
 	color: black;
@@ -152,13 +189,14 @@ font-family: "open sans", sans-serif;
 
 .card__text p {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 23px;
     font-weight: 400;
-    margin-bottom: 2em;
+/*    margin-bottom: 2em;*/
 }
 
 .card__text {
-	padding: 20px 40px;
+	padding: 32px 35px;
+	background-color: white;
 }
 
 h2 {
@@ -168,10 +206,15 @@ h2 {
 }
 
 .card__img {
-	background-image: url("winter_tea.png");
+/*	background-image: url("chicken_thigh.png");
 	background-size: cover;
-	height: 140px;
-	background-position-y: -79px;
+	height: 185px;*/
+	/*background-position-y: -79px;*/
+}
+
+.card__img img {
+		max-width: 100%;
+	width: 100%;
 }
 
 .link {
@@ -210,8 +253,8 @@ footer {
 
 .footer-link {
     color: rgba(255,255,255,0.6);
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 12px;
     padding-bottom: 1em;
     transition: all 0.25s;
     cursor: pointer;
@@ -222,9 +265,16 @@ footer {
 
 }
 
-small {
+footer small {
 	color: rgba(255,255,255,0.3);
-    font-size: 15px;
+    font-size: 14px;
+}
+
+small {
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
 }
 
 
@@ -244,6 +294,11 @@ small {
     padding: 16px 24px;
     border-bottom: 1px solid #3c3c3c;
     transition: all 0.25s;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.7px;
 }
 
 .site-nav-mobile a:first-child li{
@@ -252,6 +307,10 @@ small {
 
 .site-nav-mobile .social-links i {
 	color: white;
+}
+
+.site-nav-mobile .social-links i:hover {
+	color: rgba(255,255,255,0.5);
 }
 
 .site-nav-mobile li:hover {
@@ -295,12 +354,12 @@ small {
 
 .menu-img {
 	max-width: 100%;
-	height: 100px;
+	height: 120px;
 }
 
 .menu-img--lg {
 	max-width: 100%;
-	height: 120px;
+	height: 146px;
 }
 
 
@@ -310,22 +369,71 @@ small {
 	background-position-y: -14px;
 }
 
-#chicken {
-	background-image: url("chicken.png");
+#grandma_braised_rice {
+	background-image: url("grandma_braised_rice.png");
 	background-size: cover;
-	background-position: -8px -32px;
+	background-position-y: -26px;
+}
+
+#treasure_rice {
+	background-image: url("treasure_rice.png");
+	background-size: cover;
+	background-position-y: -32px;
+}
+
+#mee_sua {
+	background-image: url("mee_sua.png");
+	background-size: cover;
+	background-position-y: -14px;
+}
+
+#chicken {
+    background-image: url(chicken.png);
+    background-size: cover;
+    background-position: -9px -45px;
 }
 
 #plum_potato_fries {
 	background-image: url("plum_potato_fries.png");
 	background-size: cover;
-	background-position: 10px -29px;
+	background-position-y: -29px;
+}
+
+#crispy_mushrooms {
+	background-image: url("crispy_mushrooms.png");
+	background-size: cover;
+	background-position-y: -29px;
 }
 
 #ai_yu {
 	background-image: url("ai_yu.png");
 	background-size: cover;
-	background-position: -3px -67px;
+	background-position: -3px -102px;
+}
+
+#winter_tea {
+	background-image: url("winter_tea.png");
+	background-size: cover;
+	background-position: -3px -102px;
+}
+
+#buttlefly {
+	background-image: url("buttlefly.png");
+	background-size: cover;
+	background-position: -3px -182px;
+	height: 400px;
+}
+
+#plum_juice {
+	background-image: url("plum_juice.png");
+	background-size: cover;
+	background-position: -3px -102px;
+}
+
+#lemon_cooler {
+	background-image: url("lemon_cooler.png");
+	background-size: cover;
+	background-position: -3px -102px;
 }
 
 
@@ -343,13 +451,14 @@ small {
 }
 
 .menu-items li {
-	margin-bottom: 2em;
-	max-width: 254px;
+/*	margin-bottom: 2em;*/
+	max-width: 320px;
+/*	width: 320px;*/
 }
 
-.menu-items p {
+/*.menu-items p {
 	margin: 0;
-}
+}*/
 
 .menu-items h3 {
 	margin-bottom: .5em;
@@ -360,25 +469,24 @@ small {
 }
 
 .hero-text {
-	padding: 0px 20px 0 20px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 2;
+	max-width: 720px;
 }
 
-
-@media (max-width: 320px) {
-	.hero-image {
-		padding: 56px 0 56px 0;
-	}	
-	.content {
-		padding: 20px 0;
-	}
-	.card, .card--fluid {
-		margin:20px 0;
-		width: 100%;
-	}
-	.card__img {
-		background-position: -4px -93px;
-	}
+.header-note {
+    margin-bottom: 64px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
 }
+
 
 .u-italic {
 	font-style: italic;
@@ -392,7 +500,7 @@ small {
 	font-weight: 700 !important;
 }
 .menu-sections .menu-section--active {
-	font-weight: 900 !important;
+	font-weight: 700 !important;
 	font-size: 13px;
 }
 .banner-bg {
@@ -406,3 +514,164 @@ small {
 .site-banner-sm {
 	    margin-top: -60px;
 }
+
+h4 {
+	font-size: 25px;
+	line-height: 27px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+.menu-text {
+	margin: 0;
+	padding: 16px 0 32px 0;
+}
+
+.small-caps {
+	font-size: 12px;
+	letter-spacing: 1.6px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: black;
+}
+
+@media (max-width: 320px) {
+/*	.hero-image {
+		padding: 56px 0 56px 0;
+	}	*/
+	.content {
+		padding: 20px 0;
+	}
+	.card--fluid {
+		margin:20px 0;
+		width: 100%;
+	}
+/*	.card__img {
+		background-position: -4px -93px;
+	}*/
+	.card__text {
+		padding: 32px 0px;
+	}
+
+	.menu-text {
+		padding: 32px 35px;
+	}
+
+	.menu-items .menu-section-title{
+		padding: 0 35px;
+	}
+
+	.menu-nav {
+		padding: 0 35px;
+	}
+
+	.card__text-wrapper {
+		padding: 0 35px;
+	}
+
+	.hero-image--landing {
+	background-position: -84px center;
+	}
+
+	.header-note {
+		padding: 0 35px;
+	}
+}
+@media (max-width: 756px) {
+	.hero-text{
+		padding: 0 20px;
+		margin: 0 20px;
+	}
+}
+@media (max-width: 950px) {
+		.hero-image--landing {
+	background-position: -84px center;
+	}
+}
+
+@media (min-width: 760px) {
+	.row {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.row li:first-child {
+		margin-right: 35px;
+	}
+
+	.card--fluid {
+		max-width: 720px;
+	}
+
+	h1 {
+		font-size: 60px;
+		line-height: 64px;
+		font-weight: 400;
+	}
+
+	small {
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+}
+
+@media (min-width: 321px) {
+		#chicken {
+		    background-position: -9px -25px;
+	}
+}
+
+@media (max-width: 500px) {
+	#buttlefly {
+		height: 200px;
+		background-position: -3px -72px;
+	}
+}
+
+.card--center {
+	/*width: 280px;*/
+	width: 100%;
+	max-width: 320px;
+    background-color: transparent;
+    margin: 0 auto;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 720px;
+}
+
+.store-info p {
+	margin: 12px 0 15px 0;
+}
+
+.spacer {
+    height: 20px;
+    margin: 0 -20px 0 0;
+    /* margin: 20px 0 -50px 0; use this if you want #container to have a 'bottom padding', in this case of 20px */
+    background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
+}
+
+
+
+
+
+.u-maxWidth320 {
+	max-width: 320px !important;
+}
+
+
+
+
