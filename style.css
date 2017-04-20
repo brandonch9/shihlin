@@ -107,7 +107,7 @@ a {
 
 .hero-image {
 	clear: both;
-	background-image: url("skyline_red_3.png");
+	background-image: url("skyline_02.png");
 	/*background-image: url("ssam_hero.png");*/
 	background-size: cover;
 	height: 715.5px;
@@ -266,14 +266,14 @@ footer {
 }
 
 footer small {
-	color: rgba(255,255,255,0.3) !important;
+	color: rgba(255,255,255,0.3);
     font-size: 14px;
 }
 
 small {
-    color: white !important;
+    color: white;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     font-weight: 300;
 }
 
@@ -364,74 +364,74 @@ small {
 
 
 #grandpa_braised_rice {
-	background-image: url("grandpa_braised_rice.png");
+	background-image: url("grandpa_braised_rice.jpg");
 	background-size: cover;
 	background-position-y: -14px;
 }
 
 #grandma_braised_rice {
-	background-image: url("grandma_braised_rice.png");
+	background-image: url("grandma_braised_rice.jpg");
 	background-size: cover;
 	background-position-y: -26px;
 }
 
 #treasure_rice {
-	background-image: url("treasure_rice.png");
+	background-image: url("treasure_rice.jpg");
 	background-size: cover;
 	background-position-y: -32px;
 }
 
 #mee_sua {
-	background-image: url("mee_sua.png");
+	background-image: url("mee_sua.jpg");
 	background-size: cover;
 	background-position-y: -14px;
 }
 
 #chicken {
-    background-image: url(chicken.png);
+    background-image: url(chicken.jpg);
     background-size: cover;
     background-position: -9px -45px;
 }
 
 #plum_potato_fries {
-	background-image: url("plum_potato_fries.png");
+	background-image: url("plum_potato_fries.jpg");
 	background-size: cover;
 	background-position-y: -29px;
 }
 
 #crispy_mushrooms {
-	background-image: url("crispy_mushrooms.png");
+	background-image: url("crispy_mushrooms.jpg");
 	background-size: cover;
 	background-position-y: -29px;
 }
 
 #ai_yu {
-	background-image: url("ai_yu.png");
+	background-image: url("ai_yu.jpg");
 	background-size: cover;
 	background-position: -3px -102px;
 }
 
 #winter_tea {
-	background-image: url("winter_tea.png");
+	background-image: url("winter_tea.jpg");
 	background-size: cover;
 	background-position: -3px -102px;
 }
 
 #buttlefly {
-	background-image: url("buttlefly.png");
+	background-image: url("buttlefly.jpg");
 	background-size: cover;
 	background-position: -3px -182px;
 	height: 400px;
 }
 
 #plum_juice {
-	background-image: url("plum_juice.png");
+	background-image: url("plum_juice.jpg");
 	background-size: cover;
 	background-position: -3px -102px;
 }
 
 #lemon_cooler {
-	background-image: url("lemon_cooler.png");
+	background-image: url("lemon_cooler.jpg");
 	background-size: cover;
 	background-position: -3px -102px;
 }
@@ -440,7 +440,7 @@ small {
 .content {
 	background-color: #444;
 	padding: 20px;
-		background-image: url("skyline_red_2.png");
+		background-image: url("skyline_red_2.jpg");
 	background-size: cover;
 }
 
@@ -596,33 +596,7 @@ h3 {
 	}
 }
 
-@media (min-width: 760px) {
-	.row {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-	}
 
-	.row li:first-child {
-		margin-right: 35px;
-	}
-
-	.card--fluid {
-		max-width: 720px;
-	}
-
-	h1 {
-		font-size: 60px;
-		line-height: 64px;
-		font-weight: 400;
-	}
-
-	small {
-		font-size: 15px;
-		line-height: 24px;
-		font-weight: 300;
-	}
-}
 
 @media (min-width: 321px) {
 		#chicken {
@@ -673,5 +647,49 @@ h3 {
 }
 
 
+
+.hero__title-small {
+	font-size: 24px;
+    line-height: 48px;
+}
+
+.hero__title-large {
+	font-weight: 400;
+    font-size: 60px;
+    line-height: 63px;
+    font-style: italic;
+    max-width: 323px;
+}
+@media (min-width: 760px) {
+	.row {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.row li:first-child {
+		margin-right: 35px;
+	}
+
+	.card--fluid {
+		max-width: 720px;
+	}
+
+	h1 {
+		font-size: 60px;
+		line-height: 64px;
+		font-weight: 400;
+	}
+
+	small {
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+
+	.hero__title-large {
+		max-width: 360px;
+	}
+}
 
 
